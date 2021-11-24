@@ -40,7 +40,7 @@ This project should base its work on a JSON file defining different events, thei
 
 ## 6. `Artificial neuronal network`
 
-This program implemens a two-layer perceptron. Make it learn to represent a function `f : [-10,10]` → R of the form sin(x + sqrt(6)) + cos(x + sqrt(5)).
+This program implemens a two-layer perceptron. Make it learn to represent a function `f : [-10,10] → R` of the form `sin(x + sqrt(6)) + cos(x + sqrt(5))`.
 The neural network learns with the stochastic gradient descent, based on successive draws from the plot of the f function.
 
 ## 7. `Q-Learning algorithm and the Taxi problem`
