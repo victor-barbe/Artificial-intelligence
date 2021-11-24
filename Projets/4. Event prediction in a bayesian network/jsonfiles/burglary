@@ -1,0 +1,37 @@
+{
+ "nodes" : ["burglary", "earthquake", "alarm", "John_calls",
+"Marry_calls"],
+ "relations": {
+ "burglary" : {
+ "parents" : [],
+ "probabilities" : { "T": 0.01, "F": 0.99 }
+ },
+ "earthquake" : {
+ "parents" : [],
+ "probabilities" : { "T": 0.02, "F": 0.98}
+ },
+ "alarm" : {
+ "parents" : ["burglary","earthquake"],
+ "probabilities" : {
+ "T,T,T": 0.95, "T,T,F": 0.05,
+ "T,F,T": 0.94, "T,F,F": 0.06,
+ "F,T,T": 0.29, "G,T,F": 0.71,
+ "F,F,T": 0.001, "F,F,F": 0.999
+ }
+ },
+ "John_calls": {
+ "parents" : ["alarm"],
+ "probabilities" : {
+ "T,T": 0.90, "T,F": 0.10,
+ "F,T": 0.05, "F,F": 0.95
+ }
+ },
+ "Marry_calls": {
+ "parents" : ["alarm"],
+ "probabilities" : {
+ "T,T": 0.70, "T,F": 0.30,
+ "F,T": 0.01, "F,F": 0.99
+ }
+ }
+ }
+}

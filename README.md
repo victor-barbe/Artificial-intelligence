@@ -40,4 +40,17 @@ This project should base its work on a JSON file defining different events, thei
 
 ## 6. `Artificial neuronal network`
 
+This program implemens a two-layer perceptron. Make it learn to represent a function `f : [-10,10]` → R of the form sin(x + sqrt(6)) + cos(x + sqrt(5)).
+The neural network learns with the stochastic gradient descent, based on successive draws from the plot of the f function.
+
 ## 7. `Q-Learning algorithm and the Taxi problem`
+
+The goal of this program is to solve the Taxi problem (find the least expensive path to a point).
+
+The prepared solution should consist of 3 parts:
+
+1. Training program. It should accept algorithm parameters, display some quality metric (e.g. episode reward) during training, and save the trained model.
+
+2. Visualisation program. It should be able to load the model saved by the training program and display the environment state while the loaded mo- del controls the actions of the agent.
+
+3. Trained model. For the demonstration, a model should be trained in ad- vance. Do not include the model in the sent files.
